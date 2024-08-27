@@ -1,0 +1,5 @@
+# Ignorera VSCode-konfigurationsfiler och mappar
+.vscode/
+
+# Ignorera node_modules-mappen
+node_modules/
