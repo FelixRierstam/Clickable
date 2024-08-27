@@ -10,6 +10,8 @@ import path from "path";
 const app = express();
 const port = 6060;
 
+app.use(express.static(path.join(__dirname, '../')));
+
 app.use(express.static(path.join(__dirname, '../site')));
 
 app.get("/script.js", (req, res) => {
