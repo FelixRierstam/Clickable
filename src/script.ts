@@ -140,7 +140,7 @@ function checkClick(x: number, y: number) {
                 boxes.splice(index, 1);
                 if (score === 100) {
                     gameOver = true;
-                    alert(`Congratulations! You clicked all boxes in order.`);
+                    alert(`Congratulations! You are a fast Clickerino`);
                 }
             }
         }
