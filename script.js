@@ -21,6 +21,7 @@ let score = 0;
 let gameOver = false;
 let startTime;
 let remainingTime = 240;
+let lastclickednumber = null;
 function shuffleArray(array) {
     let currentIndex = array.length;
     let randomIndex;
@@ -91,7 +92,12 @@ function drawBoxes() {
             ctx.font = "24px Arial";
             ctx.textAlign = "center";
             ctx.textBaseline = "bottom";
-            ctx.fillText(`Time Left: ${Math.max(remainingTime, 0)}s`, w / 2, h - 550);
+            ctx.fillText(`Time Left: ${Math.max(remainingTime, 0)}s`, w / 2, h - 450);
+            ctx.fillStyle = "#000000";
+            ctx.font = "24px Arial";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "bottom";
+            ctx.fillText(`last clicked: ${lastclickednumber !== null ? lastclickednumber : 'None'}`, w / 2, h - 400);
         }
     }
 }
@@ -103,6 +109,7 @@ function checkClick(x, y) {
             y >= box.y && y <= box.y + boxSize) {
             if (box.number === currentNumber) {
                 score++;
+                lastclickednumber = box.number;
                 currentNumber++;
                 boxes.splice(index, 1);
                 if (score === 100) {
