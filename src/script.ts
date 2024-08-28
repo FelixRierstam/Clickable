@@ -116,13 +116,13 @@ function drawBoxes() {
             ctx.font = "24px Arial";
             ctx.textAlign = "center";
             ctx.textBaseline = "bottom";
-            ctx.fillText(`Time Left: ${Math.max(remainingTime, 0)}s`, w / 2, h - 450);
+            ctx.fillText(`Time Left: ${Math.max(remainingTime, 0)}s`, w / 2, h - 100);
 
             ctx.fillStyle = "#000000";
             ctx.font = "24px Arial";
             ctx.textAlign = "center";
             ctx.textBaseline = "bottom";
-            ctx.fillText(`last clicked: ${lastclickednumber !== null ? lastclickednumber : 'None'}`, w / 2, h - 400)
+            ctx.fillText(`last clicked: ${lastclickednumber !== null ? lastclickednumber : 'None'}`, w / 2, h - 50)
         }
     }
 }
