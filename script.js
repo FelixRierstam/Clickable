@@ -63,7 +63,7 @@ function drawBoxes() {
     }
     boxes.forEach(box => {
         if (ctx) {
-            ctx.fillStyle = "#FFFFFF";
+            ctx.fillStyle = "#b1b3b1";
             ctx.fillRect(box.x, box.y, boxSize, boxSize);
             ctx.strokeStyle = "#000000";
             ctx.lineWidth = 2;
