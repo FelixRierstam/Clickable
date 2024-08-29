@@ -16,8 +16,8 @@ if (!ctx) {
 const w = canvas.width;
 const h = canvas.height;
 
-const boxSize = 100;
-const boxPadding = 10;
+const boxSize = 125;
+const boxPadding = 15;
 const boxesPerRow = Math.floor(w / (boxSize + boxPadding));
 const boxesPerColumn = Math.floor(h / (boxSize + boxPadding));
 
@@ -85,7 +85,7 @@ function drawBoxes() {
     
     boxes.forEach(box => {
         if (ctx){
-            ctx.fillStyle = "#b1b3b1";
+            ctx.fillStyle = "#d3d4d3";
             ctx.fillRect(box.x, box.y, boxSize, boxSize);
     
             ctx.strokeStyle = "#000000";

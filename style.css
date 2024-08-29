@@ -1,7 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #game {
@@ -10,5 +12,5 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    color: #b1b3b1;
+    color: #d3d4d3;
 }
