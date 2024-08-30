@@ -89,7 +89,7 @@ function drawBoxes() {
             ctx.fillRect(box.x, box.y, boxSize, boxSize);
     
             ctx.strokeStyle = "#000000";
-            ctx.lineWidth = 2;
+            ctx.lineWidth = 1;
             ctx.strokeRect(box.x, box.y, boxSize, boxSize);
     
             // Draw the number in the center
