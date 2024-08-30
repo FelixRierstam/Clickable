@@ -11,8 +11,8 @@ if (!ctx) {
 }
 const w = canvas.width;
 const h = canvas.height;
-const boxSize = 125;
-const boxPadding = 15;
+const boxSize = 100;
+const boxPadding = 12;
 const boxesPerRow = Math.floor(w / (boxSize + boxPadding));
 const boxesPerColumn = Math.floor(h / (boxSize + boxPadding));
 const boxes = [];
@@ -63,14 +63,14 @@ function drawBoxes() {
     }
     boxes.forEach(box => {
         if (ctx) {
-            ctx.fillStyle = "#000000";
+            ctx.fillStyle = "#e9e9e9";
             ctx.fillRect(box.x, box.y, boxSize, boxSize);
             ctx.strokeStyle = "#000000";
             ctx.lineWidth = 2;
             ctx.strokeRect(box.x, box.y, boxSize, boxSize);
             // Draw the number in the center
             ctx.fillStyle = "#000000";
-            ctx.font = "24px Arial";
+            ctx.font = "32px Arial";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(box.number.toString(), box.x + boxSize / 2, box.y + boxSize / 2);
@@ -79,7 +79,7 @@ function drawBoxes() {
     if (gameOver) {
         if (ctx) {
             ctx.fillStyle = "#000000";
-            ctx.font = "36px Arial";
+            ctx.font = "32px Arial";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(`Game Over! You clicked ${score} out of 100 boxes.`, w / 2, h / 2);

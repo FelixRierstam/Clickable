@@ -12,5 +12,5 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    color: #d3d4d3;
+    background-color: URL('Pics/Generic_18.jpg');
 }
