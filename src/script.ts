@@ -85,7 +85,7 @@ function drawBoxes() {
     
     boxes.forEach(box => {
         if (ctx){
-            ctx.fillStyle = "#d3d4d3";
+            ctx.fillStyle = "#000000";
             ctx.fillRect(box.x, box.y, boxSize, boxSize);
     
             ctx.strokeStyle = "#000000";
@@ -98,6 +98,7 @@ function drawBoxes() {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(box.number.toString(), box.x + boxSize / 2, box.y + boxSize / 2);
+            
         }
     });
 
