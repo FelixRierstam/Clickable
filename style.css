@@ -10,8 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: center;
-    padding-left: 60px;
+    padding-left: 25px;
     top: 0px;
     left: 0px;
-    background-color: URL('Pics/Generic_18.jpg');
 }
